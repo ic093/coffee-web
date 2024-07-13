@@ -1,0 +1,90 @@
+.line{
+color: #00c300;
+
+}
+.youtube{
+    color: #FF0000;
+}
+.facebook{
+    color: #1877f2;
+}
+
+.instagram{
+    color: #FF0000;
+}
+h2{
+    color: brown;
+}
+h3{
+    color: darkseagreen;
+}
+body{
+    padding-top: 90px;
+}
+.bg1{
+    background-image: linear-gradient(to right top, #2e5b5a, #3b7171, #49878a, #589ea4, #67b6bf);
+}
+.color{
+    background-color: #49878a;
+}
+.side li{
+    list-style-type: none;
+    margin-bottom: 10px;
+    background-color: antiquewhite;
+   
+   
+}
+.bi-star-fill{
+    color: #2e5b5a;
+}
+.side{
+    padding: 0px;
+}
+.bi-star{
+    color: #2e5b5a;
+}
+.bi-patch-question-fill{
+    color: rgb(189, 189, 79);
+}
+main{
+    background-image: linear-gradient(to right top, #64565d, #5b5059, #524b54, #49454f, #404049, #3c3f47, #383d45, #353c42, #353e43, #364144, #374344, #394544);
+}
+.logo{
+    font-size: 30px;
+}
+
+.change{
+    text-decoration: none;
+}
+
+ul li{
+    list-style-type: none;
+    font-family: Microsoft JhengHei;
+}
+.bi-caret-right-fill{
+   color: #589ea4;
+}
+.text{
+    color:rgb(215, 215, 82)
+}
+
+ ul li {
+    text-decoration: none;
+    list-style: none;
+}
+.foter li {
+    list-style: none;
+    
+}
+.bi-pin-angle  {
+    color: orange;
+}
+.bi-geo-alt-fill{
+    color: orange;
+}
+.bi-telephone-fill{
+    color: orange;
+}
+.bi-folder2-open{
+    color: orange;
+}

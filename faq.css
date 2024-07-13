@@ -1,0 +1,44 @@
+main{
+  background-color:white
+}
+.bi-patch-question-fill{
+  color: yellowgreen;
+}
+h2{
+  color: brown;
+}
+
+.line{
+  color: #00c300;
+  
+  }
+  .youtube{
+      color: #FF0000;
+  }
+  .facebook{
+      color: #1877f2;
+  }
+  
+  .instagram{
+      color: #FF0000;
+  }
+  .row{
+    margin-top: 120px;
+
+  }
+  .foter li {
+    list-style: none;
+    
+}
+.bi-pin-angle  {
+    color: orange;
+}
+.bi-geo-alt-fill{
+    color: orange;
+}
+.bi-telephone-fill{
+    color: orange;
+}
+.bi-folder2-open{
+    color: orange;
+}

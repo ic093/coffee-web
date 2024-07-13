@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>熱門</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css.css">
+</head>
+<div class="bg-secondary px-5 py-3">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item fs-5"><a href="./index.html " class="link-light ">首頁</a></li>
+      <li class="breadcrumb-item active text-white fs-5" aria-current="page">商品</li>
+    </ol>
+  </nav>
+  </div>
+<body class="d-flex flex-column h-100" >
+<main class="flex-shrink-0  ">
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark fixed-top">
+        <div class="container-fluid fs-3">
+          <img src="./img/cama.png" alt="" style="width: 200px ;">
+          <a class="navbar-brand fs-3" href="./index.html">貓咪咖啡館</a>
+          <i class="bi bi-facebook facebook fs-3 p-3"></i>
+          <i class="bi bi-youtube youtube fs-3 p-3"></i>
+          <i class="bi bi-line line fs-3 p-3"></i>
+          <i class="bi bi-instagram instagram fs-3 p-3"></i>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="./news.html">最新消息</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./product-list.html">周邊商品</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./faq.html">常見問題</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about.html">探索</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./product_homework.html">熱門</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">聯絡我們</a>
+                  </li>
+            </ul>
+            <div class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-cart-fill fs-3"></i>
+              
+                <span class="position-absolute top-0 start-25 translate-middle badge rounded-pill bg-danger">
+                  99+
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button>
+              <a class="btn btn-primary ms-2" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i class="bi bi-person-raised-hand fs-3"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="dashboard.html  " class="needs-validation" novalidate id="loginform">
+              <div class="text-center"><h2><i class="bi bi-flower1"></i>登入您的購物車<i class="bi bi-flower1"></i></h2></div>
+              <!-- 帳號start -->
+              <div class="mb-3">
+                <label for="account"class="form-label">帳號</label>
+                <input type="account"class="form-control shadow-sm p-3 mb-2 bg-body rounded " id="account" name="account" pattern="[A-Za-z0-9]" required>
+                <div class="invalid-feedback">
+                    請輸入正確帳號格式
+                </div>
+              </div>
+              <!-- 帳號end -->
+              <!-- 密碼start -->
+              <div class="mb-3">
+                <label for="password" class="form-label">密碼</label>
+                <input type="password"class="form-control shadow-sm p-3 mb-2 bg-body rounded" id="password" name="password" pattern="[A-Za-z0-9]" required>
+                <div class="invalid-feedback">
+                    請輸入正確密碼格式
+                </div>
+              </div>
+              <div class="mb-3 form-check mt-3">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  <div class="invalid-feedback">
+                      記住我
+                  </div>
+              </div>
+              <!-- 密碼end -->
+              <div class="text-end">
+                <input class="btn btn-primary" type="submit" value="登入">
+                <input class="btn btn-primary" type="submit" value="登出">
+              </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">哈囉</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        要進來看看嗎?
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+          相關資訊
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">品牌故事</a></li>
+          <li><a class="dropdown-item" href="#">貓咪中途之家收養</a></li>
+          <li><a class="dropdown-item" href="#">產品製造過程</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 py-2"  >
+        <h2 class="text-center">咖啡豆</h2>
+        <img src="./img/咖啡豆.jpeg" alt="" class="w-100">
+      </div>
+      <div class="col-12 col-md-6 py-2 mt-5"  >
+        <ul>
+          <li class="p-3 fs-4 fw-normal text-white"><i class="bi bi-caret-right-fill"></i></i>產區:拉丁美洲</li>
+          <li class="p-3 fs-4 fw-normal text-white"><i class="bi bi-caret-right-fill"></i></i> 風味:大黃果醬和紅櫻桃</li>
+          <li class="p-3 fs-4 fw-normal text-white"><i class="bi bi-caret-right-fill"></i></i> 主要處理法:日曬</li>
+          <li class="p-3 fs-4 fw-normal text-white"><i class="bi bi-caret-right-fill"></i></i> 烘焙度：深度洪培</li>
+          <li class="p-3 fs-4 fw-normal text-white"><i class="bi bi-caret-right-fill"></i></i> 豆產地: 中南美洲</li>
+          <li class="p-3 fs-4 fw-normal text-white"><i class="bi bi-caret-right-fill"></i></i> 馥郁中帶著清亮的巧克力香</li>
+        </ul>
+        <div style="margin-top: 200px;">
+          <div><h3 class=""><i class="bi bi-cash-coin"></i>優惠:400元</h3></div>
+        <select class="form-select form-select-lg mb-3 w-100  mb-5" aria-label=".form-select-sm example">
+          <option selected>請選擇數量</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <button type="button" class="btn  bg-white border border-warning  border-2 me-5 text fs-5">加到我購物車</button>
+        <button type="button" class="btn btn-warning text-white border-2 me-5 fs-5 border-dark">直接購買</button>
+        <button type="button" class="btn btn-warning text-white border-2 me-5 fs-5 border-dark">加入追蹤</button>
+      </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div class="container ">
+  <div class="row">
+    <p class="fs-4 lh-lg fw-bolder">成分：100% 阿拉比卡咖啡豆
+      商品規格：227g±2g
+      製造地：台灣
+      保存期限：8個月，製造日期如包裝標示
+      儲存方法：咖啡豆均屬新鮮烘焙，因此我們建議的最佳賞味期為開封後的一個月內，並請保存於陰涼處為佳；保存容器以單向排氣咖啡袋、儲豆罐或其它具單向排氣功能之容器為宜
+      咖啡因含量：每10g含45±5mg（咖啡豆屬天然農產品，會因季節、產地及沖泡時間而影響咖啡因含量）
+      出貨須知：接獲訂單後為您新鮮現烘，預定寄出日為5~7工作天。每週四固定烘豆，若您於週二前(含)訂購，可於當週五安排出貨(遇國定假日則順延出貨)，請買家耐心等候。
+      退貨須知：當您在收到商品後，發現訂購商品不符或運送過程中損壞，請立即通知我們為您處理。鑑賞期內請保持原商品完整性，商品一經使用恕不接受退貨
+      咖啡豆袋為經典版及亮點版隨機出貨
+    </p>
+      <div class="col-2"><a href=""><img class="w-100" src="./img/bean1.jpg" alt=""></a></div>
+      <div class="col-2"><a href=""><img class="w-100" src="./img/bean2.jpg" alt=""> </a></div>
+      <div class="col-2"><a href=""><img class="w-100" src="./img/bean3.jpg" alt=""> </a></div>
+      <div class="col-2"><a href=""><img class="w-100" src="./img/bean4.jpg" alt=""> </a></div>
+      <div class="col-2"><a href=""><img class="w-100" src="./img/bean5.jpg" alt=""> </a></div>
+      <div class="col-2"><a href=""><img class="w-100" src="./img/bean6.jpg" alt=""> </a></div>
+  </div>
+ 
+ </div>
+ <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./img/person2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./img/cama.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./img/person.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  <footer class="bg-dark mt-auto p-3 text-white">
+<div class="container">
+  <div class="row">
+    <div class="col-4 col-md-4 h-100 mb-5 mt-5">
+<img src="./img/footer_logo.png" alt="" class="w-50">
+
+    </div>
+    <div class="col-4 col-md-4 h-100 mb-5 mt-5">
+      <ui class="foter">
+        <li class="p-3 fs-5"><i class="bi bi-pin-angle "></i> 咖碼股份有限公司統一編號</li>
+        <li class="p-3 fs-5"><i class="bi bi-geo-alt-fill"></i> 台北市大安區安和路一段 27 號 18 樓</li>
+        <li class="p-3 fs-5"><i class="bi bi-telephone-fill"></i> 0800-068-566</li>
+        <li class="p-3 fs-5"><i class="bi bi-folder2-open"></i> service@camacafe.com</li>
+      </ui>
+          </div>
+          <div class="col-4 col-md-4 h-100 mb-5 mt-5">
+            <ul>
+              <li class="p-3 fs-5">隱私權政策</li>
+              <li class="p-3 fs-5">常見問題</li>
+              <li class="p-3 fs-5">加入我們</li>
+            </ul>
+          </div>
+          
+  </div>
+</div>
+
+
+  </footer>
+   <a href="javascript:;" class="position-fixed end-0 bottom-50 bg-success text-white p-4 fs-3 text-decoration-none rounded-circle"><i class="bi bi-ticket-perforated"></i> 線上訂位</a>
+   <a href="javascript:;" class="position-fixed end-0 bottom-0 bg-secondary text-white p-3 m-3 text-decoration-none rounded-circle">TOP</a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="./JS/validation.js"></script>
+</body>
+</html>

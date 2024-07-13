@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聯絡我們</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./faq.css">
+</head>
+
+<body class="d-flex flex-column h-100" >
+<main class="flex-shrink-0 ">
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark fixed-top">
+        <div class="container-fluid fs-3">
+          <img src="./img/cama.png" alt="" style="width: 200px ;">
+          <a class="navbar-brand fs-3" href="./index.html">貓咪咖啡館</a>
+          <i class="bi bi-facebook facebook fs-3 p-3"></i>
+          <i class="bi bi-youtube youtube fs-3 p-3"></i>
+          <i class="bi bi-line line fs-3 p-3"></i>
+          <i class="bi bi-instagram instagram fs-3 p-3"></i>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="./news.html">最新消息</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./product-list.html">周邊商品</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./faq.html">常見問題</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about.html">探索</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./product_homework.html">熱門</a>
+                  </li> 
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">聯絡我們</a>
+                  </li>
+            </ul>
+            <div class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-cart-fill"></i>
+              
+                <span class="position-absolute top-0 start-25 translate-middle badge rounded-pill bg-danger">
+                  99+
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button>
+              <a class="btn btn-primary ms-2" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i class="bi bi-person-raised-hand"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- 麵包屑 -->
+      <div class=" px-5 py-3"style="margin-top: 70px;">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item fs-5"><a href="./index.html " class="link-light" style="color: black;">首頁</a></li>
+            <li class="breadcrumb-item active fs-5" style="color:black;" aria-current="page">商品</li>
+          </ol>
+        </nav>
+        </div>
+           <!-- 麵包屑 -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="dashboard.html  " class="needs-validation" novalidate id="loginform">
+              <div class="text-center"><h2><i class="bi bi-flower1"></i>登入您的購物車<i class="bi bi-flower1"></i></h2></div>
+              <!-- 帳號start -->
+              <div class="mb-3">
+                <label for="account"class="form-label">帳號</label>
+                <input type="account"class="form-control shadow-sm p-3 mb-2 bg-body rounded " id="account" name="account" pattern="[A-Za-z0-9]" required>
+                <div class="invalid-feedback">
+                    請輸入正確帳號格式
+                </div>
+              </div>
+              <!-- 帳號end -->
+              <!-- 密碼start -->
+              <div class="mb-3">
+                <label for="password" class="form-label">密碼</label>
+                <input type="password"class="form-control shadow-sm p-3 mb-2 bg-body rounded" id="password" name="password" pattern="[A-Za-z0-9]" required>
+                <div class="invalid-feedback">
+                    請輸入正確密碼格式
+                </div>
+              </div>
+              <div class="mb-3 form-check mt-3">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  <div class="invalid-feedback">
+                      記住我
+                  </div>
+              </div>
+              <!-- 密碼end -->
+              <div class="text-end">
+                <input class="btn btn-primary" type="submit" value="登入">
+                <input class="btn btn-primary" type="submit" value="登出">
+              </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">哈囉</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        要進來看看嗎?
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+          相關資訊
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">品牌故事</a></li>
+          <li><a class="dropdown-item" href="#">貓咪中途之家收養</a></li>
+          <li><a class="dropdown-item" href="#">產品製造過程</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 表單 -->
+  <div class="container mt-5">
+    <div class="row">
+      <h2 class="text-center">聯絡我們</h2>
+      <div class="col-12 md-12 col-lg12- mx-auto shadow-lg p-3 mb-5 bg-body rounded">
+        <div class="container mt-5 shadow-lg p-3 mb-5 bg-body rounded ">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">姓名</label>
+            <input type="text" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">手機</label>
+            <input type="text" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampledate" class="form-label">消費時間</label>
+            <input type="date" class="form-control" id="exampledate">
+          </div>
+          <div class="mb-3">
+            <label for="example" class="form-label">主旨</label>
+            <input type="text" class="form-control" id="example">
+          </div>
+          <div class="mb-3">
+            <label for="exampletext" class="form-label">建議事項</label>
+            <input type="text" class="form-control" id="exampletext">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">發送</button>
+        </form>
+      </div>
+      </div>
+    </div>
+  </div>
+   <!-- 表單 -->
+</main>
+
+<footer class="bg-dark mt-auto p-3 text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-4 col-md-4 h-100 mb-5 mt-5">
+  <img src="./img/footer_logo.png" alt="" class="w-50">
+  
+      </div>
+      <div class="col-4 col-md-4 h-100 mb-5 mt-5">
+        <ui class="foter">
+          <li class="p-3 fs-5"><i class="bi bi-pin-angle "></i> 咖碼股份有限公司統一編號</li>
+          <li class="p-3 fs-5"><i class="bi bi-geo-alt-fill"></i> 台北市大安區安和路一段 27 號 18 樓</li>
+          <li class="p-3 fs-5"><i class="bi bi-telephone-fill"></i> 0800-068-566</li>
+          <li class="p-3 fs-5"><i class="bi bi-folder2-open"></i> service@camacafe.com</li>
+        </ui>
+            </div>
+            <div class="col-4 col-md-4 h-100 mb-5 mt-5">
+              <ul>
+                <li class="p-3 fs-5">隱私權政策</li>
+                <li class="p-3 fs-5">常見問題</li>
+                <li class="p-3 fs-5">加入我們</li>
+              </ul>
+            </div>
+            
+    </div>
+  </div>
+  </footer>
+
+
+
+   <a href="javascript:;" class="position-fixed end-0 bottom-50 bg-success text-white p-4 fs-3 text-decoration-none rounded-circle"><i class="bi bi-ticket-perforated"></i> 線上訂位</a>
+   <a href="javascript:;" class="position-fixed end-0 bottom-0 bg-secondary text-white p-3 m-3 text-decoration-none rounded-circle">TOP</a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="./JS/validation.js"></script>
+</body>
+</html>
